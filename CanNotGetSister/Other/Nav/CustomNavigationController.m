@@ -23,7 +23,7 @@
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
     if (self.childViewControllers.count > 0) {
         UIButton *backItemButton = [self createBackButton];
-        viewController.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backItemButton];
+        viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backItemButton];
         // 隐藏底部的 tabBar
         viewController.hidesBottomBarWhenPushed = YES;
     }
@@ -45,7 +45,7 @@
     [backItemButton setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
     [backItemButton setContentEdgeInsets:UIEdgeInsetsMake(0, -10, 0, 0)];
     [backItemButton addTarget:self action:@selector(back:) forControlEvents:UIControlEventTouchUpInside];
-    //        [backItemButton sizeToFit];
+    [backItemButton sizeToFit];
     return backItemButton;
 }
 

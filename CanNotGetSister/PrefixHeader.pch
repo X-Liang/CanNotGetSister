@@ -11,6 +11,7 @@
 
 /// Category
 #import "UIView+ViewTools.h"
+#import "NSArray+NSArrayTools.h"
 #import "UIBarButtonItem+BarButtonTools.h"
 
 /// Global

@@ -7,7 +7,7 @@
 //
 
 #import "FriendTrendsViewController.h"
-
+#import "RecommendAttentionViewController.h"
 @interface FriendTrendsViewController ()
 
 @end
@@ -17,14 +17,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"我的关注";
-    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImageName:@""
-                                                            highlightImageName:@""
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImageName:@"friendsRecommentIcon"
+                                                            highlightImageName:@"friendsRecommentIcon-click"
                                                                         target:self
                                                                         action:@selector(leftBarButtonClicked:)];
 }
 
 - (void)leftBarButtonClicked:(UIButton *)leftButton {
-    
+    RecommendAttentionViewController *recommAttentionVC = [[RecommendAttentionViewController alloc] init];
+    [self.navigationController pushViewController:recommAttentionVC animated:YES];
 }
 
 

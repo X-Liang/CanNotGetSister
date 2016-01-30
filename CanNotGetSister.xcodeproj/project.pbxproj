@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C24A1B00A12A2B8A2D763DD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C093BA42935F5969377D5BEA /* libPods.a */; };
+		471A4DC81C5B545600B78E6A /* RecommendAttentionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 471A4DC71C5B545600B78E6A /* RecommendAttentionViewController.xib */; };
+		471A4DE51C5B5CAD00B78E6A /* RecommendType.m in Sources */ = {isa = PBXBuildFile; fileRef = 471A4DE41C5B5CAD00B78E6A /* RecommendType.m */; };
+		471A4DF11C5B5E1A00B78E6A /* RecommendCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 471A4DEF1C5B5E1A00B78E6A /* RecommendCategoryCell.m */; };
+		471A4DF21C5B5E1A00B78E6A /* RecommendCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 471A4DF01C5B5E1A00B78E6A /* RecommendCategoryCell.xib */; };
+		471A4DF91C5B6B3500B78E6A /* RecommendUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 471A4DF71C5B6B3500B78E6A /* RecommendUserCell.m */; };
+		471A4DFA1C5B6B3500B78E6A /* RecommendUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 471A4DF81C5B6B3500B78E6A /* RecommendUserCell.xib */; };
+		471A4DFD1C5B6CF500B78E6A /* RecommendUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 471A4DFC1C5B6CF500B78E6A /* RecommendUser.m */; };
+		471A4E001C5BB17C00B78E6A /* NSArray+NSArrayTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 471A4DFF1C5BB17C00B78E6A /* NSArray+NSArrayTools.m */; };
 		47D997F81C5B3A26001D73DF /* UIBarButtonItem+BarButtonTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D997EF1C5B3A26001D73DF /* UIBarButtonItem+BarButtonTools.m */; };
 		47D997F91C5B3A26001D73DF /* UIView+ViewTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D997F11C5B3A26001D73DF /* UIView+ViewTools.m */; };
 		47D997FA1C5B3A26001D73DF /* RootTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D997F41C5B3A26001D73DF /* RootTabBarController.m */; };
@@ -25,6 +34,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		471A4DC71C5B545600B78E6A /* RecommendAttentionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommendAttentionViewController.xib; sourceTree = "<group>"; };
+		471A4DE31C5B5CAD00B78E6A /* RecommendType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecommendType.h; path = ../ViewControllers/RecommendType.h; sourceTree = "<group>"; };
+		471A4DE41C5B5CAD00B78E6A /* RecommendType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RecommendType.m; path = ../ViewControllers/RecommendType.m; sourceTree = "<group>"; };
+		471A4DEE1C5B5E1A00B78E6A /* RecommendCategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendCategoryCell.h; sourceTree = "<group>"; };
+		471A4DEF1C5B5E1A00B78E6A /* RecommendCategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendCategoryCell.m; sourceTree = "<group>"; };
+		471A4DF01C5B5E1A00B78E6A /* RecommendCategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommendCategoryCell.xib; sourceTree = "<group>"; };
+		471A4DF61C5B6B3500B78E6A /* RecommendUserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendUserCell.h; sourceTree = "<group>"; };
+		471A4DF71C5B6B3500B78E6A /* RecommendUserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendUserCell.m; sourceTree = "<group>"; };
+		471A4DF81C5B6B3500B78E6A /* RecommendUserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommendUserCell.xib; sourceTree = "<group>"; };
+		471A4DFB1C5B6CF500B78E6A /* RecommendUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendUser.h; sourceTree = "<group>"; };
+		471A4DFC1C5B6CF500B78E6A /* RecommendUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendUser.m; sourceTree = "<group>"; };
+		471A4DFE1C5BB17C00B78E6A /* NSArray+NSArrayTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+NSArrayTools.h"; sourceTree = "<group>"; };
+		471A4DFF1C5BB17C00B78E6A /* NSArray+NSArrayTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+NSArrayTools.m"; sourceTree = "<group>"; };
 		47D997EE1C5B3A26001D73DF /* UIBarButtonItem+BarButtonTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+BarButtonTools.h"; sourceTree = "<group>"; };
 		47D997EF1C5B3A26001D73DF /* UIBarButtonItem+BarButtonTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+BarButtonTools.m"; sourceTree = "<group>"; };
 		47D997F01C5B3A26001D73DF /* UIView+ViewTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewTools.h"; sourceTree = "<group>"; };
@@ -54,6 +76,9 @@
 		47FB735B1C57C7DE00984F1D /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		47FB73621C57C83300984F1D /* NewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewViewController.h; sourceTree = "<group>"; };
 		47FB73631C57C83300984F1D /* NewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewViewController.m; sourceTree = "<group>"; };
+		8BD4E77F57AE828E39343A55 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		C093BA42935F5969377D5BEA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA1CD66FD96B67687A46C07 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C24A1B00A12A2B8A2D763DD /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +111,8 @@
 				47D997EF1C5B3A26001D73DF /* UIBarButtonItem+BarButtonTools.m */,
 				47D997F01C5B3A26001D73DF /* UIView+ViewTools.h */,
 				47D997F11C5B3A26001D73DF /* UIView+ViewTools.m */,
+				471A4DFE1C5BB17C00B78E6A /* NSArray+NSArrayTools.h */,
+				471A4DFF1C5BB17C00B78E6A /* NSArray+NSArrayTools.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -121,6 +149,8 @@
 			children = (
 				47FB73071C5797F900984F1D /* CanNotGetSister */,
 				47FB73061C5797F900984F1D /* Products */,
+				5248A8B943CB46D8D7D07B51 /* Pods */,
+				8E728B16B834BCDFF8053F7D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -205,6 +235,10 @@
 		47FB73511C57C7B700984F1D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				471A4DE31C5B5CAD00B78E6A /* RecommendType.h */,
+				471A4DE41C5B5CAD00B78E6A /* RecommendType.m */,
+				471A4DFB1C5B6CF500B78E6A /* RecommendUser.h */,
+				471A4DFC1C5B6CF500B78E6A /* RecommendUser.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -217,6 +251,7 @@
 				47D998001C5B47DE001D73DF /* FriendTrendsViewController.xib */,
 				47D998021C5B4D9D001D73DF /* RecommendAttentionViewController.h */,
 				47D998031C5B4D9D001D73DF /* RecommendAttentionViewController.m */,
+				471A4DC71C5B545600B78E6A /* RecommendAttentionViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -224,6 +259,12 @@
 		47FB73551C57C7B700984F1D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				471A4DEE1C5B5E1A00B78E6A /* RecommendCategoryCell.h */,
+				471A4DEF1C5B5E1A00B78E6A /* RecommendCategoryCell.m */,
+				471A4DF01C5B5E1A00B78E6A /* RecommendCategoryCell.xib */,
+				471A4DF61C5B6B3500B78E6A /* RecommendUserCell.h */,
+				471A4DF71C5B6B3500B78E6A /* RecommendUserCell.m */,
+				471A4DF81C5B6B3500B78E6A /* RecommendUserCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -294,6 +335,23 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		5248A8B943CB46D8D7D07B51 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CEA1CD66FD96B67687A46C07 /* Pods.debug.xcconfig */,
+				8BD4E77F57AE828E39343A55 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8E728B16B834BCDFF8053F7D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C093BA42935F5969377D5BEA /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -301,9 +359,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 47FB731C1C5797F900984F1D /* Build configuration list for PBXNativeTarget "CanNotGetSister" */;
 			buildPhases = (
+				ABDCCC79D5FC363A44DADB5B /* Check Pods Manifest.lock */,
 				47FB73011C5797F900984F1D /* Sources */,
 				47FB73021C5797F900984F1D /* Frameworks */,
 				47FB73031C5797F900984F1D /* Resources */,
+				C69669A46D966503C340BA43 /* Embed Pods Frameworks */,
+				5F94D29CF2DA6D1D25C0032D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -352,27 +413,83 @@
 			buildActionMask = 2147483647;
 			files = (
 				47FB73181C5797F900984F1D /* LaunchScreen.storyboard in Resources */,
+				471A4DFA1C5B6B3500B78E6A /* RecommendUserCell.xib in Resources */,
 				47FB73151C5797F900984F1D /* Assets.xcassets in Resources */,
+				471A4DF21C5B5E1A00B78E6A /* RecommendCategoryCell.xib in Resources */,
 				47D998011C5B47DE001D73DF /* FriendTrendsViewController.xib in Resources */,
+				471A4DC81C5B545600B78E6A /* RecommendAttentionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5F94D29CF2DA6D1D25C0032D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABDCCC79D5FC363A44DADB5B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C69669A46D966503C340BA43 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		47FB73011C5797F900984F1D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				471A4DF91C5B6B3500B78E6A /* RecommendUserCell.m in Sources */,
 				47D997F81C5B3A26001D73DF /* UIBarButtonItem+BarButtonTools.m in Sources */,
+				471A4DE51C5B5CAD00B78E6A /* RecommendType.m in Sources */,
+				471A4DFD1C5B6CF500B78E6A /* RecommendUser.m in Sources */,
 				47FB73411C57C74B00984F1D /* EssenceViewController.m in Sources */,
 				47FB735D1C57C7DE00984F1D /* MineViewController.m in Sources */,
 				47D997FA1C5B3A26001D73DF /* RootTabBarController.m in Sources */,
 				47FB73561C57C7B700984F1D /* FriendTrendsViewController.m in Sources */,
 				47D997FF1C5B3A51001D73DF /* CustomNavigationController.m in Sources */,
+				471A4E001C5BB17C00B78E6A /* NSArray+NSArrayTools.m in Sources */,
 				47FB730D1C5797F900984F1D /* AppDelegate.m in Sources */,
 				47FB73641C57C83300984F1D /* NewViewController.m in Sources */,
 				47D998041C5B4D9D001D73DF /* RecommendAttentionViewController.m in Sources */,
+				471A4DF11C5B5E1A00B78E6A /* RecommendCategoryCell.m in Sources */,
 				47D997F91C5B3A26001D73DF /* UIView+ViewTools.m in Sources */,
 				47D997FB1C5B3A26001D73DF /* CustomTabBar.m in Sources */,
 				47FB730A1C5797F900984F1D /* main.m in Sources */,
@@ -475,6 +592,7 @@
 		};
 		47FB731D1C5797F900984F1D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEA1CD66FD96B67687A46C07 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -488,6 +606,7 @@
 		};
 		47FB731E1C5797F900984F1D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BD4E77F57AE828E39343A55 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
