@@ -7,6 +7,7 @@
 //
 
 #import "EssenceViewController.h"
+#import "RecommendTagsViewController.h"
 
 @interface EssenceViewController ()
 
@@ -28,7 +29,8 @@
 }
 
 - (void)leftBarButtonClicked:(UIButton *)leftButton {
-    
+    RecommendTagsViewController *tagsViewController = [[RecommendTagsViewController alloc] init];
+    [self.navigationController pushViewController:tagsViewController animated:YES];
 }
 
 @end

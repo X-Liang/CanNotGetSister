@@ -85,16 +85,6 @@
 }
 
 #pragma mark - TableViewDelegate
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    if ([tableView isEqual:self.tableView]) {
-        return 45;
-    } else if ([tableView isEqual:self.userTableView]) {
-        return 65;
-    } else {
-        return 0;
-    }
-}
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     // 结束刷新
@@ -121,8 +111,10 @@
     [self.userTableView registerNib:[UINib nibWithNibName:@"RecommendUserCell" bundle:nil]
              forCellReuseIdentifier:@"RecommendUserCell"];
     self.tableView.contentInset = UIEdgeInsetsMake(64, 0, 0, 0);
+    self.tableView.rowHeight = 45;
     self.userTableView.contentInset = self.tableView.contentInset;
     self.userTableView.tableFooterView = [UIView new];
+    self.userTableView.rowHeight = 65;
     [self setUpRefresh];
 }
 /// 添加刷新控件

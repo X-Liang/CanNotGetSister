@@ -8,6 +8,7 @@
 
 #import "FriendTrendsViewController.h"
 #import "RecommendAttentionViewController.h"
+#import "LoginRegisterViewController.h"
 @interface FriendTrendsViewController ()
 
 @end
@@ -28,5 +29,9 @@
     [self.navigationController pushViewController:recommAttentionVC animated:YES];
 }
 
+- (IBAction)loginRegisterBtnAction:(UIButton *)sender {
+    LoginRegisterViewController *loginRegister = [[LoginRegisterViewController alloc] init];
+    [self presentViewController:loginRegister animated:YES completion:nil];
+}
 
 @end

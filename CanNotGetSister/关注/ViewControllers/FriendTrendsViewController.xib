@@ -37,6 +37,9 @@
                     <state key="highlighted" backgroundImage="friendsTrend_login_click">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="loginRegisterBtnAction:" destination="-1" eventType="touchUpInside" id="Cqx-eE-tZq"/>
+                    </connections>
                 </button>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header_cry_icon" translatesAutoresizingMaskIntoConstraints="NO" id="80F-Ew-pTT">
                     <rect key="frame" x="136" y="192" width="48" height="48"/>

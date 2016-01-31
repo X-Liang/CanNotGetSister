@@ -16,6 +16,12 @@
 		471A4DFA1C5B6B3500B78E6A /* RecommendUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 471A4DF81C5B6B3500B78E6A /* RecommendUserCell.xib */; };
 		471A4DFD1C5B6CF500B78E6A /* RecommendUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 471A4DFC1C5B6CF500B78E6A /* RecommendUser.m */; };
 		471A4E001C5BB17C00B78E6A /* NSArray+NSArrayTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 471A4DFF1C5BB17C00B78E6A /* NSArray+NSArrayTools.m */; };
+		471A4E031C5CA4C800B78E6A /* RecommendTagsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 471A4E021C5CA4C800B78E6A /* RecommendTagsViewController.m */; };
+		471A4E061C5CA63E00B78E6A /* RecommendTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 471A4E051C5CA63E00B78E6A /* RecommendTag.m */; };
+		471A4E0A1C5CA6C600B78E6A /* RecommendTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 471A4E081C5CA6C600B78E6A /* RecommendTagCell.m */; };
+		471A4E0B1C5CA6C600B78E6A /* RecommendTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 471A4E091C5CA6C600B78E6A /* RecommendTagCell.xib */; };
+		471A4E131C5DA48C00B78E6A /* LoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 471A4E111C5DA48C00B78E6A /* LoginRegisterViewController.m */; };
+		471A4E141C5DA48C00B78E6A /* LoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 471A4E121C5DA48C00B78E6A /* LoginRegisterViewController.xib */; };
 		47D997F81C5B3A26001D73DF /* UIBarButtonItem+BarButtonTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D997EF1C5B3A26001D73DF /* UIBarButtonItem+BarButtonTools.m */; };
 		47D997F91C5B3A26001D73DF /* UIView+ViewTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D997F11C5B3A26001D73DF /* UIView+ViewTools.m */; };
 		47D997FA1C5B3A26001D73DF /* RootTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D997F41C5B3A26001D73DF /* RootTabBarController.m */; };
@@ -47,6 +53,16 @@
 		471A4DFC1C5B6CF500B78E6A /* RecommendUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendUser.m; sourceTree = "<group>"; };
 		471A4DFE1C5BB17C00B78E6A /* NSArray+NSArrayTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+NSArrayTools.h"; sourceTree = "<group>"; };
 		471A4DFF1C5BB17C00B78E6A /* NSArray+NSArrayTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+NSArrayTools.m"; sourceTree = "<group>"; };
+		471A4E011C5CA4C800B78E6A /* RecommendTagsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendTagsViewController.h; sourceTree = "<group>"; };
+		471A4E021C5CA4C800B78E6A /* RecommendTagsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendTagsViewController.m; sourceTree = "<group>"; };
+		471A4E041C5CA63E00B78E6A /* RecommendTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendTag.h; sourceTree = "<group>"; };
+		471A4E051C5CA63E00B78E6A /* RecommendTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendTag.m; sourceTree = "<group>"; };
+		471A4E071C5CA6C600B78E6A /* RecommendTagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendTagCell.h; sourceTree = "<group>"; };
+		471A4E081C5CA6C600B78E6A /* RecommendTagCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendTagCell.m; sourceTree = "<group>"; };
+		471A4E091C5CA6C600B78E6A /* RecommendTagCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommendTagCell.xib; sourceTree = "<group>"; };
+		471A4E101C5DA48C00B78E6A /* LoginRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginRegisterViewController.h; sourceTree = "<group>"; };
+		471A4E111C5DA48C00B78E6A /* LoginRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginRegisterViewController.m; sourceTree = "<group>"; };
+		471A4E121C5DA48C00B78E6A /* LoginRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginRegisterViewController.xib; sourceTree = "<group>"; };
 		47D997EE1C5B3A26001D73DF /* UIBarButtonItem+BarButtonTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+BarButtonTools.h"; sourceTree = "<group>"; };
 		47D997EF1C5B3A26001D73DF /* UIBarButtonItem+BarButtonTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+BarButtonTools.m"; sourceTree = "<group>"; };
 		47D997F01C5B3A26001D73DF /* UIView+ViewTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewTools.h"; sourceTree = "<group>"; };
@@ -93,6 +109,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		471A4E0C1C5DA43900B78E6A /* 登录 */ = {
+			isa = PBXGroup;
+			children = (
+				471A4E0D1C5DA45200B78E6A /* Model */,
+				471A4E0E1C5DA45200B78E6A /* View */,
+				471A4E0F1C5DA45200B78E6A /* ViewController */,
+			);
+			path = "登录";
+			sourceTree = "<group>";
+		};
+		471A4E0D1C5DA45200B78E6A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		471A4E0E1C5DA45200B78E6A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		471A4E0F1C5DA45200B78E6A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				471A4E101C5DA48C00B78E6A /* LoginRegisterViewController.h */,
+				471A4E111C5DA48C00B78E6A /* LoginRegisterViewController.m */,
+				471A4E121C5DA48C00B78E6A /* LoginRegisterViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		47D997EC1C5B3A26001D73DF /* Other */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +252,8 @@
 		47FB733C1C57C74B00984F1D /* Modes */ = {
 			isa = PBXGroup;
 			children = (
+				471A4E041C5CA63E00B78E6A /* RecommendTag.h */,
+				471A4E051C5CA63E00B78E6A /* RecommendTag.m */,
 			);
 			path = Modes;
 			sourceTree = "<group>";
@@ -211,6 +263,8 @@
 			children = (
 				47FB733E1C57C74B00984F1D /* EssenceViewController.h */,
 				47FB733F1C57C74B00984F1D /* EssenceViewController.m */,
+				471A4E011C5CA4C800B78E6A /* RecommendTagsViewController.h */,
+				471A4E021C5CA4C800B78E6A /* RecommendTagsViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -218,6 +272,9 @@
 		47FB73401C57C74B00984F1D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				471A4E071C5CA6C600B78E6A /* RecommendTagCell.h */,
+				471A4E081C5CA6C600B78E6A /* RecommendTagCell.m */,
+				471A4E091C5CA6C600B78E6A /* RecommendTagCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -225,6 +282,7 @@
 		47FB73501C57C7B700984F1D /* 关注 */ = {
 			isa = PBXGroup;
 			children = (
+				471A4E0C1C5DA43900B78E6A /* 登录 */,
 				47FB73511C57C7B700984F1D /* Models */,
 				47FB73521C57C7B700984F1D /* ViewControllers */,
 				47FB73551C57C7B700984F1D /* Views */,
@@ -412,10 +470,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				471A4E0B1C5CA6C600B78E6A /* RecommendTagCell.xib in Resources */,
 				47FB73181C5797F900984F1D /* LaunchScreen.storyboard in Resources */,
 				471A4DFA1C5B6B3500B78E6A /* RecommendUserCell.xib in Resources */,
 				47FB73151C5797F900984F1D /* Assets.xcassets in Resources */,
 				471A4DF21C5B5E1A00B78E6A /* RecommendCategoryCell.xib in Resources */,
+				471A4E141C5DA48C00B78E6A /* LoginRegisterViewController.xib in Resources */,
 				47D998011C5B47DE001D73DF /* FriendTrendsViewController.xib in Resources */,
 				471A4DC81C5B545600B78E6A /* RecommendAttentionViewController.xib in Resources */,
 			);
@@ -478,6 +538,7 @@
 			files = (
 				471A4DF91C5B6B3500B78E6A /* RecommendUserCell.m in Sources */,
 				47D997F81C5B3A26001D73DF /* UIBarButtonItem+BarButtonTools.m in Sources */,
+				471A4E031C5CA4C800B78E6A /* RecommendTagsViewController.m in Sources */,
 				471A4DE51C5B5CAD00B78E6A /* RecommendType.m in Sources */,
 				471A4DFD1C5B6CF500B78E6A /* RecommendUser.m in Sources */,
 				47FB73411C57C74B00984F1D /* EssenceViewController.m in Sources */,
@@ -486,11 +547,14 @@
 				47FB73561C57C7B700984F1D /* FriendTrendsViewController.m in Sources */,
 				47D997FF1C5B3A51001D73DF /* CustomNavigationController.m in Sources */,
 				471A4E001C5BB17C00B78E6A /* NSArray+NSArrayTools.m in Sources */,
+				471A4E131C5DA48C00B78E6A /* LoginRegisterViewController.m in Sources */,
 				47FB730D1C5797F900984F1D /* AppDelegate.m in Sources */,
 				47FB73641C57C83300984F1D /* NewViewController.m in Sources */,
 				47D998041C5B4D9D001D73DF /* RecommendAttentionViewController.m in Sources */,
 				471A4DF11C5B5E1A00B78E6A /* RecommendCategoryCell.m in Sources */,
+				471A4E0A1C5CA6C600B78E6A /* RecommendTagCell.m in Sources */,
 				47D997F91C5B3A26001D73DF /* UIView+ViewTools.m in Sources */,
+				471A4E061C5CA63E00B78E6A /* RecommendTag.m in Sources */,
 				47D997FB1C5B3A26001D73DF /* CustomTabBar.m in Sources */,
 				47FB730A1C5797F900984F1D /* main.m in Sources */,
 			);
