@@ -9,5 +9,4 @@
 #import "RecommendTag.h"
 
 @implementation RecommendTag
-
 @end

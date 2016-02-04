@@ -9,6 +9,7 @@
 #import "LoginRegisterViewController.h"
 
 @interface LoginRegisterViewController ()
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *loginViewLeftConstraint;
 
 @end
 
@@ -16,22 +17,52 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+}
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (NSAttributedString *)createAttributePlaceHolder:(NSString *)placeHolder {
+    return [[NSAttributedString alloc] initWithString:placeHolder attributes:@{NSForegroundColorAttributeName: [UIColor grayColor]}];
+}
+- (IBAction)register:(UIButton *)sender {
+    [self.view endEditing:YES];
+    if (self.loginViewLeftConstraint.constant == 0) {
+        [sender setTitle:@"已有账号??" forState: UIControlStateNormal];
+        self.loginViewLeftConstraint.constant -= self.view.bounds.size.width;
+        [UIView animateWithDuration:.5f
+                              delay:0.f
+             usingSpringWithDamping:0.6
+              initialSpringVelocity:0.f
+                            options:UIViewAnimationOptionCurveEaseInOut animations:^{
+                                [self.view setNeedsLayout];
+                                [self.view layoutIfNeeded];
+                            } completion:^(BOOL finished) {
+                                
+                            }];
+    } else {
+        [sender setTitle:@"注册账号" forState: UIControlStateNormal];
+        self.loginViewLeftConstraint.constant = 0;
+        [UIView animateWithDuration:.5f
+                              delay:0.f
+             usingSpringWithDamping:0.6
+              initialSpringVelocity:0.f
+                            options:UIViewAnimationOptionCurveEaseInOut animations:^{
+                                [self.view setNeedsLayout];
+                                [self.view layoutIfNeeded];
+                            } completion:^(BOOL finished) {
+                                
+                            }];
+    }
+    
+    
+}
+- (IBAction)dismiss {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self.view endEditing:YES];
 }
-*/
 
 @end

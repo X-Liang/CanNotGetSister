@@ -7,6 +7,7 @@
 //
 
 #import "CustomTabBar.h"
+#import "PublishViewController.h"
 
 @interface CustomTabBar ()
 @property (nonatomic, weak) UIButton *publishButton;
@@ -48,8 +49,14 @@
     [button setImage:[UIImage imageNamed:@"tabBar_publish_icon"] forState:UIControlStateNormal];
     [button setImage:[UIImage imageNamed:@"tabBar_publish_click_icon"] forState:UIControlStateSelected];
     button.bounds = CGRectMake(0, 0, button.currentImage.size.width, button.currentImage.size.height);
+    [button addTarget:self action:@selector(showPublishVC:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:button];
     self.publishButton = button;
+}
+
+- (void)showPublishVC:(UIButton *)btn {
+    PublishViewController *publishVC = [[PublishViewController alloc] init];
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:publishVC animated:NO completion:nil];
 }
 
 @end

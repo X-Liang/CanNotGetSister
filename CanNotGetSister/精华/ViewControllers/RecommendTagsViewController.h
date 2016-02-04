@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+/// 推荐标签 ViewController
 @interface RecommendTagsViewController : UITableViewController
 
 @end
