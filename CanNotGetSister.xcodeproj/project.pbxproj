@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2C24A1B00A12A2B8A2D763DD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C093BA42935F5969377D5BEA /* libPods.a */; };
+		471270471C64CFF600F51867 /* PublishView.m in Sources */ = {isa = PBXBuildFile; fileRef = 471270461C64CFF600F51867 /* PublishView.m */; };
+		471270491C64D00400F51867 /* PublishView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 471270481C64D00400F51867 /* PublishView.xib */; };
+		471270501C64E6EF00F51867 /* XLStatusBarHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4712704F1C64E6EF00F51867 /* XLStatusBarHUD.m */; };
 		471A4DC81C5B545600B78E6A /* RecommendAttentionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 471A4DC71C5B545600B78E6A /* RecommendAttentionViewController.xib */; };
 		471A4DE51C5B5CAD00B78E6A /* RecommendType.m in Sources */ = {isa = PBXBuildFile; fileRef = 471A4DE41C5B5CAD00B78E6A /* RecommendType.m */; };
 		471A4DF11C5B5E1A00B78E6A /* RecommendCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 471A4DEF1C5B5E1A00B78E6A /* RecommendCategoryCell.m */; };
@@ -63,6 +66,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		471270451C64CFF600F51867 /* PublishView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublishView.h; sourceTree = "<group>"; };
+		471270461C64CFF600F51867 /* PublishView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublishView.m; sourceTree = "<group>"; };
+		471270481C64D00400F51867 /* PublishView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PublishView.xib; sourceTree = "<group>"; };
+		4712704E1C64E6EF00F51867 /* XLStatusBarHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLStatusBarHUD.h; sourceTree = "<group>"; };
+		4712704F1C64E6EF00F51867 /* XLStatusBarHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLStatusBarHUD.m; sourceTree = "<group>"; };
 		471A4DC71C5B545600B78E6A /* RecommendAttentionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommendAttentionViewController.xib; sourceTree = "<group>"; };
 		471A4DE31C5B5CAD00B78E6A /* RecommendType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecommendType.h; path = ../ViewControllers/RecommendType.h; sourceTree = "<group>"; };
 		471A4DE41C5B5CAD00B78E6A /* RecommendType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RecommendType.m; path = ../ViewControllers/RecommendType.m; sourceTree = "<group>"; };
@@ -173,6 +181,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4712704D1C64E6EF00F51867 /* StatusBarHUD */ = {
+			isa = PBXGroup;
+			children = (
+				4712704E1C64E6EF00F51867 /* XLStatusBarHUD.h */,
+				4712704F1C64E6EF00F51867 /* XLStatusBarHUD.m */,
+			);
+			path = StatusBarHUD;
+			sourceTree = "<group>";
+		};
 		471A4E0C1C5DA43900B78E6A /* 登录 */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +231,7 @@
 				471A4E171C5DAB9200B78E6A /* VerticalButton.m */,
 				471A4E191C5F0C5E00B78E6A /* CustomTextField.h */,
 				471A4E1A1C5F0C5E00B78E6A /* CustomTextField.m */,
+				4712704D1C64E6EF00F51867 /* StatusBarHUD */,
 				471A4E1C1C5F4E1600B78E6A /* GuideView */,
 			);
 			path = CustomView;
@@ -252,6 +270,9 @@
 				473570641C63715300F8FE39 /* PublishViewController.h */,
 				473570651C63715300F8FE39 /* PublishViewController.m */,
 				473570661C63715300F8FE39 /* PublishViewController.xib */,
+				471270451C64CFF600F51867 /* PublishView.h */,
+				471270461C64CFF600F51867 /* PublishView.m */,
+				471270481C64D00400F51867 /* PublishView.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -625,6 +646,7 @@
 			files = (
 				471A4E211C5F4E4600B78E6A /* GuideView.xib in Resources */,
 				471A4E0B1C5CA6C600B78E6A /* RecommendTagCell.xib in Resources */,
+				471270491C64D00400F51867 /* PublishView.xib in Resources */,
 				473570541C6335B300F8FE39 /* TopicPictureContentView.xib in Resources */,
 				47FB73181C5797F900984F1D /* LaunchScreen.storyboard in Resources */,
 				471A4DFA1C5B6B3500B78E6A /* RecommendUserCell.xib in Resources */,
@@ -718,6 +740,7 @@
 				471A4E401C61A43800B78E6A /* Const.m in Sources */,
 				47FB73641C57C83300984F1D /* NewViewController.m in Sources */,
 				471A4E1F1C5F4E3800B78E6A /* GuideView.m in Sources */,
+				471270501C64E6EF00F51867 /* XLStatusBarHUD.m in Sources */,
 				47D998041C5B4D9D001D73DF /* RecommendAttentionViewController.m in Sources */,
 				471A4E2D1C5FB8D500B78E6A /* VideoViewController.m in Sources */,
 				471A4E301C5FB93500B78E6A /* WordViewController.m in Sources */,
@@ -728,6 +751,7 @@
 				473570581C635A4300F8FE39 /* ShowPictureViewController.m in Sources */,
 				473570671C63715300F8FE39 /* PublishViewController.m in Sources */,
 				471A4E2A1C5FB8B600B78E6A /* PictureViewController.m in Sources */,
+				471270471C64CFF600F51867 /* PublishView.m in Sources */,
 				471A4E181C5DAB9200B78E6A /* VerticalButton.m in Sources */,
 				471A4E271C5FB8AC00B78E6A /* VoiceViewController.m in Sources */,
 				4735705C1C636C8000F8FE39 /* UIImage+ImageTools.m in Sources */,

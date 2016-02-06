@@ -15,12 +15,15 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ss3-WQ-I9V">
-                    <rect key="frame" x="145" y="521" width="30" height="27"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                    <state key="normal" title="取消">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shareBottomBackground" translatesAutoresizingMaskIntoConstraints="NO" id="86O-AT-wm0">
+                    <rect key="frame" x="-5" y="0.0" width="325" height="568"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ss3-WQ-I9V">
+                    <rect key="frame" x="16" y="508" width="289" height="40"/>
+                    <state key="normal" image="shareButtonCancel">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <state key="highlighted" image="shareButtonCancelClick"/>
                     <connections>
                         <action selector="dismiss:" destination="-1" eventType="touchUpInside" id="GkV-ye-FXZ"/>
                     </connections>
@@ -29,10 +32,19 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="ss3-WQ-I9V" secondAttribute="bottom" constant="20" id="Fux-Yi-sjk"/>
+                <constraint firstItem="86O-AT-wm0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="LPS-Ft-mpb"/>
+                <constraint firstAttribute="trailing" secondItem="86O-AT-wm0" secondAttribute="trailing" id="jA4-0U-hHA"/>
+                <constraint firstItem="86O-AT-wm0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="-5" id="oH3-A4-naD"/>
                 <constraint firstItem="ss3-WQ-I9V" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ua0-Vk-bRn"/>
+                <constraint firstAttribute="bottom" secondItem="86O-AT-wm0" secondAttribute="bottom" id="vDR-vz-arX"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-            <point key="canvasLocation" x="233" y="387"/>
+            <point key="canvasLocation" x="-44" y="405"/>
         </view>
     </objects>
+    <resources>
+        <image name="shareBottomBackground" width="320" height="343"/>
+        <image name="shareButtonCancel" width="289" height="40"/>
+        <image name="shareButtonCancelClick" width="289" height="40"/>
+    </resources>
 </document>

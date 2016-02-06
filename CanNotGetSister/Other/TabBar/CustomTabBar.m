@@ -8,6 +8,9 @@
 
 #import "CustomTabBar.h"
 #import "PublishViewController.h"
+#import "PublishView.h"
+
+#import "XLStatusBarHUD.h"
 
 @interface CustomTabBar ()
 @property (nonatomic, weak) UIButton *publishButton;
@@ -55,8 +58,25 @@
 }
 
 - (void)showPublishVC:(UIButton *)btn {
+    // 方法一: 通过弹出模态视图
+//    [self method_1];
+    
+    // 方法二: 通过添加子视图
+//    [self method_2];
+    
+    [XLStatusBarHUD showLoading];
+}
+
+- (void)method_1 {
     PublishViewController *publishVC = [[PublishViewController alloc] init];
     [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:publishVC animated:NO completion:nil];
+}
+
+- (void)method_2 {
+    [PublishView show];
+//    UIWindow *window = [UIApplication sharedApplication].keyWindow;
+//    publicView.frame = window.bounds;
+//    [window addSubview:publicView];
 }
 
 @end

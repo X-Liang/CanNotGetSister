@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UIImageView *slognImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@""]];
+    UIImageView *slognImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"app_slogan"]];
     slognImageView.y = ScreenHeight * .2f;
     slognImageView.centerX = ScreenWidth * .5f;
     [self.view addSubview:slognImageView];
@@ -33,15 +33,16 @@
     CGFloat sectionMargin = 10;
     CGFloat btnsMargin = (ScreenWidth - 2 * sectionMargin - clos * btnWidth) / 2.f;
     CGFloat btnStartY = (ScreenHeight - 2 * btnHeight - 10) * .5f;
-    NSArray *images = @[
-                        @"publish-audio", @"publish-offline", @"publish-picture", @"", @"publish-review", @"publish-text",@"publish-video"
-                        ];
-//    NSArray *titles = @[];
+    // 数据
+    NSArray *images = @[@"publish-video", @"publish-picture", @"publish-text", @"publish-audio", @"publish-review", @"publish-offline"];
+    NSArray *titles = @[@"发视频", @"发图片", @"发段子", @"发声音", @"审帖", @"离线下载"];
     for (NSInteger index = 0; index < 6; index++) {
         VerticalButton *btn = [[VerticalButton alloc] init];
         btn.frame = CGRectMake(sectionMargin + (index % clos)  * (btnsMargin + btnWidth), btnStartY + index / clos * (btnHeight + 5), btnWidth, btnHeight);
         [btn setImage:[UIImage imageNamed:images[index]] forState:UIControlStateNormal];
-//        [btn setTitle:titles[index] forState:UIControlStateNormal];
+        [btn setTitle:titles[index] forState:UIControlStateNormal];
+        [btn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+        btn.titleLabel.font = [UIFont systemFontOfSize:15];
         [self.view addSubview:btn];
     }
 }
