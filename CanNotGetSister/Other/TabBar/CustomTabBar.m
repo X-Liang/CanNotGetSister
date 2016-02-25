@@ -59,12 +59,12 @@
 
 - (void)showPublishVC:(UIButton *)btn {
     // 方法一: 通过弹出模态视图
-//    [self method_1];
+    [self method_1];
     
     // 方法二: 通过添加子视图
 //    [self method_2];
     
-    [XLStatusBarHUD showLoading];
+//    [XLStatusBarHUD showLoading];
 }
 
 - (void)method_1 {

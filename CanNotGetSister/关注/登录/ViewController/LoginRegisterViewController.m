@@ -18,9 +18,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 }
-- (UIStatusBarStyle)preferredStatusBarStyle {
-    return UIStatusBarStyleLightContent;
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    // infoPlist 中 View controller-based status bar appearance 置为 NO
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;    // 设置 StatusBar 为白色
 }
+
+//- (UIStatusBarStyle)preferredStatusBarStyle {
+//    return UIStatusBarStyleLightContent;
+//}
 
 - (NSAttributedString *)createAttributePlaceHolder:(NSString *)placeHolder {
     return [[NSAttributedString alloc] initWithString:placeHolder attributes:@{NSForegroundColorAttributeName: [UIColor grayColor]}];
@@ -58,6 +65,7 @@
     
 }
 - (IBAction)dismiss {
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault; // 复原
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 

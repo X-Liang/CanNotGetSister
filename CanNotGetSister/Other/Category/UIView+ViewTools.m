@@ -80,4 +80,16 @@
     return self.center.y;
 }
 
+- (BOOL)isShowingInKeyWindow {
+    CGRect windowBounds = [self.superview convertRect:self.frame toView:[UIApplication sharedApplication].keyWindow];
+    return !self.hidden &&
+        self.alpha > 0.01 &&
+        self.window==[UIApplication sharedApplication].keyWindow &&     // 被添加到主窗口
+        CGRectIntersectsRect(windowBounds, [UIApplication sharedApplication].keyWindow.bounds); // 与主窗口有交叉
+}
+
++ (instancetype)viewFromXib {
+    return [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:nil options:nil] firstObject];
+}
+
 @end

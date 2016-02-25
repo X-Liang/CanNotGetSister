@@ -17,4 +17,11 @@
 @property (nonatomic, assign) CGFloat y;
 @property (nonatomic, assign) CGFloat centerX;
 @property (nonatomic, assign) CGFloat centerY;
+
+/// 是否显示在主窗口
+- (BOOL)isShowingInKeyWindow;
+
+/// 从 Xib 中加载 View
++ (instancetype)viewFromXib;
+
 @end

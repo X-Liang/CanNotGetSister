@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-
+@class Comment;
 @interface TopicModel : NSObject
+@property (nonatomic, copy) NSString *ID;
 /** 发帖人的昵称 */
 @property (copy, nonatomic) NSString *name;
 /** 头像的图片url地址 */
@@ -37,6 +38,8 @@
 @property (nonatomic, copy) NSString *large_image;
 // 中图
 @property (nonatomic, copy) NSString *middle_image;
+
+/******************* 图片帖子 ******************/
 /** 图片宽度*/
 @property (nonatomic, assign) CGFloat width;
 /** 图片高度*/
@@ -47,5 +50,25 @@
 @property (nonatomic, assign) BOOL overHeight;
 /** 模型对应的 Cell 高度*/
 @property (nonatomic, assign, readonly) CGFloat cellHeight;
+
+/******************* 声音帖子 ******************/
+/** 音频时长*/
+@property (nonatomic, assign) NSInteger voicetime;
+/** 声音内容空间的 frame*/
+@property (nonatomic, assign, readonly) CGRect voiceContentFrame;
+
+/******************* 视频帖子 ******************/
+@property (nonatomic, assign) CGRect videoContentFrame;
+
+
+/** 音频/ 视频的播放次数*/
+@property (nonatomic, copy) NSString *playcount;
+
+/// 最热评论
+@property (nonatomic, strong) Comment *top_cmt;
+
+- (void)clearCellHeight;
+
+- (void)setCellHeight:(CGFloat)cellHeight;
 
 @end

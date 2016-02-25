@@ -60,7 +60,7 @@ static NSUInteger Tag = 678;
     UIView *tagsView = [[UIView alloc] init];
 //    tagsView.backgroundColor = XLColor(255, 255, 255, 0.5);
 //    tagsView.backgroundColor = [UIColor colorWithWhite:1.f alpha:0.5];
-    tagsView.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.5];
+    tagsView.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.95];
     tagsView.frame = CGRectMake(0, NavHeight, self.view.width, TagsViewHeight);
     [self.view addSubview:tagsView];
     self.tagsView = tagsView;

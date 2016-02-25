@@ -6,8 +6,8 @@
 //  Copyright © 2016年 X-Liang. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "EssenceViewController.h"
 /// 新帖
-@interface NewViewController : UIViewController
+@interface NewViewController : EssenceViewController
 
 @end

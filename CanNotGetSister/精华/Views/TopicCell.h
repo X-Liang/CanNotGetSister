@@ -12,4 +12,5 @@
 /// 段子 Cell
 @interface TopicCell : UITableViewCell
 @property (nonatomic, strong) TopicModel *topic;
++ (instancetype)topicCell;
 @end

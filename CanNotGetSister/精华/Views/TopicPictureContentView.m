@@ -24,12 +24,13 @@
 @implementation TopicPictureContentView
 
 + (instancetype)pictureView {
-    return [[[NSBundle mainBundle] loadNibNamed:@"TopicPictureContentView" owner:nil options:nil] firstObject];
+    return [self viewFromXib];
 }
 
 - (void)awakeFromNib {
     [super awakeFromNib];
     self.contentImageView.userInteractionEnabled = YES;
+    self.autoresizingMask = UIViewAutoresizingNone;
     [self.contentImageView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapContentImage:)]];
 }
 

@@ -14,6 +14,17 @@
     // 设置 NavBar 的背景图片
     UINavigationBar *navBar = [UINavigationBar appearanceWhenContainedInInstancesOfClasses:@[self]];
     [navBar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
+    
+    UIBarButtonItem *item = [UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[self]];
+    NSMutableDictionary *normalAttrs = [NSMutableDictionary dictionary];
+    normalAttrs[NSForegroundColorAttributeName] = [UIColor blackColor];
+    normalAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:17.f];
+    [item setTitleTextAttributes:normalAttrs forState:UIControlStateNormal];
+    
+    NSMutableDictionary *disableAttrs = [NSMutableDictionary dictionary];
+    disableAttrs[NSForegroundColorAttributeName] = [UIColor lightGrayColor];
+    disableAttrs[NSFontAttributeName] = normalAttrs[NSFontAttributeName];
+    [item setTitleTextAttributes:disableAttrs forState:UIControlStateDisabled];
 }
 
 - (void)viewDidLoad {

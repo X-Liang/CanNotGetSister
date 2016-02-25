@@ -11,7 +11,7 @@
 @implementation GuideView
 
 + (instancetype)guideView {
-    return [[[NSBundle mainBundle] loadNibNamed:@"GuideView" owner:nil options:nil] firstObject];
+    return [self viewFromXib];
 }
 
 + (void)show {

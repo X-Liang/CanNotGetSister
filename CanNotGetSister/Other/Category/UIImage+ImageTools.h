@@ -13,4 +13,9 @@
  * 从图片最顶部截取指定大小的 image
  */
 - (UIImage *)shapeImageTopAreaInTargetSize:(CGSize)targetSize;
+
+/**
+ * 获得图片的圆形图片, 制作圆形头像
+ */
+- (UIImage *)circlyImage;
 @end

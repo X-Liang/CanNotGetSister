@@ -7,6 +7,8 @@
 //
 
 #import "TopicBaseViewController.h"
+#import "CommentViewController.h"
+#import "NewViewController.h"
 
 #import "TopicModel.h"
 
@@ -25,9 +27,18 @@
 @property (nonatomic, copy) NSString *maxTime;
 /// 上一次网络请求时发送的参数
 @property (nonatomic, strong) NSDictionary *preParamaters;
+
+// 上次选中的索引
+@property (nonatomic, assign) NSInteger preSelectIndex;
+
+@property (nonatomic, copy) NSString *a;
 @end
 
 @implementation TopicBaseViewController
+
+- (NSString *)a {
+     return [self.parentViewController isKindOfClass:[NewViewController class]] ? @"newlist" : @"list";
+}
 
 /// 由子类实现
 - (NSString *)type {
@@ -45,6 +56,7 @@
     [super viewDidLoad];
     [self configureTableView];
     [self setUpRefresh];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(tabBarDidSelected) name:TabBarDidSelectedNotification object:nil];
 }
 
 - (void)configureTableView {
@@ -82,7 +94,7 @@
     [self.tableView.mj_footer endRefreshing];
     
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
-    parameters[@"a"] = @"list";
+    parameters[@"a"] = self.a;
     parameters[@"c"] = @"data";
     parameters[@"type"] = self.type;
     self.preParamaters = parameters;
@@ -115,7 +127,7 @@
     [self.tableView.mj_header endRefreshing];
     self.currentPage++;
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
-    parameters[@"a"] = @"list";
+    parameters[@"a"] = self.a;
     parameters[@"c"] = @"data";
     parameters[@"type"] = self.type;
     parameters[@"page"] = @(self.currentPage);
@@ -146,6 +158,7 @@
 }
 
 #pragma mark - UITableViewDataSource
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     self.tableView.mj_footer.hidden = (self.topics.count == 0);
@@ -162,6 +175,24 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     TopicModel *topic = self.topics[indexPath.row];
     return topic.cellHeight;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    CommentViewController *commentVC = [[CommentViewController alloc] init];
+    commentVC.topicModel = self.topics[indexPath.row];
+    [self.navigationController pushViewController:commentVC animated:YES];
+}
+
+#pragma mark - Notification
+- (void)tabBarDidSelected {
+    // 如果是连续点击两次, 并且选中的控制器为精华控制器, 并且显示在窗口, 刷新
+    if (self.preSelectIndex == self.tabBarController.selectedIndex &&
+        self.tabBarController.selectedViewController == self.navigationController &&
+        [self.view isShowingInKeyWindow]) {
+        [self.tableView.mj_header beginRefreshing];
+    }
+    // 记录这次选中的索引
+    self.preSelectIndex = self.tabBarController.selectedIndex;
 }
 
 @end

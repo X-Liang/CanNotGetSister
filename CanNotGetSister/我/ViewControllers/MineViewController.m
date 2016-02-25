@@ -7,6 +7,7 @@
 //
 
 #import "MineViewController.h"
+#import "MineFooterView.h"
 
 @interface MineViewController ()
 
@@ -22,11 +23,24 @@
                                                             highlightImageName:@"mine-setting-icon-click"
                                                                         target:self
                                                                         action:@selector(rightBarButtonClicked:)];
-
+    // 设置 footerView
+    self.tableView.tableFooterView = [[MineFooterView alloc] init];
 }
 
 - (void)rightBarButtonClicked:(UIButton *)leftButton {
     
+}
+
+#pragma mark - UITableViewDataSource
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 0;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    return cell;
 }
 
 @end

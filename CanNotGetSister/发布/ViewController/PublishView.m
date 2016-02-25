@@ -12,7 +12,7 @@
 @implementation PublishView
 
 + (instancetype)publishView {
-    return [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:nil options:nil] firstObject];
+    return [self viewFromXib];
 }
 
 - (void)awakeFromNib {

@@ -39,4 +39,26 @@
     return targetImage;
 }
 
+- (UIImage *)circlyImage {
+    // 开启透明的图像上下文
+    // YES -> 不透明, NO -> 透明
+    UIGraphicsBeginImageContextWithOptions(self.size, NO, 0.f);
+    
+    // 获得当前图像上下文
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    // 添加圆
+    CGRect circlyRect = CGRectMake(0, 0, self.size.width, self.size.height);
+    CGContextAddEllipseInRect(context, circlyRect);
+    // 根据圆形裁剪, 之后绘制的内容都会被裁剪
+    CGContextClip(context);
+    // 将图片绘制
+    [self drawInRect:circlyRect];
+    
+    // 获得生成图片
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    // 关闭上下文
+    UIGraphicsEndImageContext();
+    return image;
+}
+
 @end
